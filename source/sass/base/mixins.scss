@@ -1,0 +1,69 @@
+@mixin inner {
+  width: 100%;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    padding: 0 50px;
+  }
+}
+
+@mixin inner-custom {
+  width: 100%;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1400px;
+    padding: 50px;
+  }
+}
+
+@mixin nameFont-100 {
+  font-family: " - 100", "Arial", sans-serif;
+  font-weight: 100;
+}
+
+@mixin nameFont-300 {
+  font-family: " - 300", "Arial", sans-serif;
+  font-weight: 300;
+}
+
+@mixin nameFont-700 {
+  font-family: " - 700", "Arial", sans-serif;
+  font-weight: 700;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button-style {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1;
+  color: $color-brand;
+  text-transform: uppercase;
+  border: solid 2px $color-danger;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: $color-hover;
+  }
+
+  &:active {
+    color: $color-active;
+  }
+}
