@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-left: 68px;
+}
+
+.nav__list {
+  @include reset-list;
+  display: flex;
+}
+
+.nav__item {
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}

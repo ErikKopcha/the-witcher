@@ -1,14 +1,16 @@
 // Текстовые стили, размеры шрифтов и тд
 body {
-  font-family: "", "Arial", sans-serif;
-  font-weight: 300;
-  font-style: regular;
-  font-size: 16px;
+  background-color: #141218;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.01em;
-  color: #000000;
+  color: #ffffff;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }

@@ -1,16 +1,24 @@
 // Цвета
-$color-brand: #63d1bb;
-$color-hover: #63d1bb;
-$color-active: #63d1bb;
+$color-default: #000000;
+$color-desc: rgba(0, 0, 0, 0.5);
+$color-info: #363636;
+$color-hover: #888888;
+$color-active: #00aeef;
+$color-button: #000000;
 
-// Свойства шрифтов
-// $font-size-base: 14px;
-// $line-height: 1;
+$border-bottom: 1px solid #e2e2e2;
+
+// Анимация
+$transition: all 0.3s ease;
 
 // Значения вьюпортов
 $tablet-width: 768px;
 $mobile-width-only: $tablet-width - 1;
-$desktop-width: 1150px;
+$desktop-width: 1440px;
+
+$tablet-width-custom: 768px;
+$mobile-width-only-custom: $tablet-width - 1;
+$desktop-width-custom: 1128px;
 
 // Ретинизация
 $retina_dpi: 144dpi;

@@ -55,9 +55,32 @@ img {
   height: auto;
 }
 
-// Ретинизация bg image
-// @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-//   .page-header__logo {
-//     background-image: url("../img/hero-desktop@2x.jpg") no-repeat center top rgb(249, 249, 249);
-//   }
-// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+canvas,
+figure,
+figcaption,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+}

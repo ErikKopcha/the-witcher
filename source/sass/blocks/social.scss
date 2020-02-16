@@ -1,0 +1,11 @@
+.social__list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}

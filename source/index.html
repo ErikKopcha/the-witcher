@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="preload" href="fonts/" as="font" type="font/woff2">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Стартовый шаблон</title>
+  <title>The Witcher</title>
 </head>
 
 <body>
@@ -23,10 +23,41 @@
   <!-- Шапка -->
   <header class="header">
 
-    <div class="header__inner"></div>
+    <div class="header__inner">
+      <img src="img/logo.svg" alt="Логотип">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Описание</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Трейлер</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="svg-icon" width="18" height="14" aria-label="твиттер">
+                <use xlink:href="#twitter"></use>
+              </svg>
+            </a></li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="svg-icon" width="18" height="17" aria-label="инстаграм">
+                <use xlink:href="#instagram"></use>
+              </svg>
+            </a></li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="svg-icon" width="18" height="17" aria-label="фейсбук">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a></li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Правильное подключение картинки -->
-    <picture>
+    <!-- <picture>
       <source type="image/webp" media="(min-width: 1150px)"
         srcset="img/webp/firsova-desktop@1x.webp 1x, img/webp/firsova-desktop@2x.webp 2x">
       <source type="image/webp" media="(min-width: 768px)"
@@ -35,18 +66,22 @@
       <source media="(min-width: 1150px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
       <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
       <img class="header__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Фирсова">
-    </picture>
-
-    <!-- Правильное подключение SVG спрайта -->
-    <svg class="svg-icon svg-icon__interior" width="40" height="62">
-      <use xlink:href="#icon-feature-money"></use>
-    </svg>
+    </picture> -->
 
   </header>
 
   <!-- Основной контент -->
   <main class="main">
-    <div class="main__inner"></div>
+    <div class="main__inner">
+      <div class="main__content">
+        <span class="main__ganre">2019, фэнтези</span>
+        <div class="main__rating">
+          <div class="main__stars"></div>
+          <div class="main__numbers"></div>
+        </div>
+      </div>
+      <div class="main__button-play"></div>
+    </div>
   </main>
 
   <!-- Подвал -->

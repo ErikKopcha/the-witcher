@@ -7,8 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1150px;
-    padding: 0 50px;
+    padding: 0 25px;
   }
 }
 
@@ -16,29 +15,15 @@
   width: 100%;
   padding: 0 30px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width-custom) {
     padding: 0 40px;
   }
 
-  @media (min-width: $desktop-width) {
-    max-width: 1400px;
-    padding: 50px;
+  @media (min-width: $desktop-width-custom) {
+    width: 1128px;
+    margin: 0 auto;
+    padding: 0;
   }
-}
-
-@mixin nameFont-100 {
-  font-family: " - 100", "Arial", sans-serif;
-  font-weight: 100;
-}
-
-@mixin nameFont-300 {
-  font-family: " - 300", "Arial", sans-serif;
-  font-weight: 300;
-}
-
-@mixin nameFont-700 {
-  font-family: " - 700", "Arial", sans-serif;
-  font-weight: 700;
 }
 
 @mixin reset-list {
@@ -49,18 +34,17 @@
 
 @mixin button-style {
   font-family: inherit;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1;
-  color: $color-brand;
-  text-transform: uppercase;
-  border: solid 2px $color-danger;
-  background-color: transparent;
+  color: $color-button;
   cursor: pointer;
-  transition: all 0.2s ease;
+  border: none;
+  transition: $transition;
 
   &:hover {
-    color: $color-hover;
+    color: #ffffff;
+    background-color: $color-active;
   }
 
   &:active {
