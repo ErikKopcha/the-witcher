@@ -4,4 +4,4 @@
 
 **Technology stack:** HTML5 / CSS3 / JavaScript / jQuery / Responsive Web Design
 
-**GitHub Pages:** [The Witcher](#)
+**GitHub Pages:** [Link - soon](#)
