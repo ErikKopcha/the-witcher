@@ -1,3 +1,98 @@
 .main__inner {
   @include inner;
 }
+
+.main__ganre {
+  margin-bottom: 10px;
+}
+
+.main__rating {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main__stars {
+  margin-right: 8px;
+}
+
+.main__numbers {
+  font-size: 12px;
+}
+
+.main__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main__description {
+  max-width: 470px;
+}
+
+.main__title {
+  font-family: "Mason Regular";
+  font-size: 76px;
+  margin: 55px 0 55px 0;
+}
+
+.main__text {
+  margin-bottom: 80px;
+}
+
+.main__link-online {
+  padding: 22px 72px;
+  background-color: $color-hover;
+  border-radius: 6px;
+  transition: $transition;
+
+  &:hover {
+    background-color: rgba($color: $color-hover, $alpha: 0.7);
+  }
+
+  &:active {
+    background-color: rgba($color: $color-hover, $alpha: 1.0);
+  }
+}
+
+.main__play {
+  align-self: center;
+  transition: all 0.4s ease;
+  margin-right: 200px;
+}
+
+.main__btn {
+  @include button-style;
+
+  border: 20px solid $color-hover;
+  border-radius: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -37px;
+    left: -37px;
+    width: 130px;
+    height: 120px;
+    background-color: $color-hover;
+    opacity: 0.5;
+    border-radius: 100%;
+    z-index: -1;
+    transition: $transition;
+
+  }
+
+  &:hover::after {
+    top: -47px;
+    left: -47px;
+    width: 150px;
+    height: 140px;
+  }
+
+  &:active::after {
+    top: -37px;
+    left: -37px;
+    width: 130px;
+    height: 120px;
+  }
+}

@@ -84,3 +84,14 @@ video {
   margin: 0;
   padding: 0;
 }
+
+.body {
+  background: url("../img/background.jpg") no-repeat 70% top rgb(20, 18, 24);
+}
+
+// Ретинизация bg image
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .body {
+    background: url("../img/background2x.jpg") no-repeat 70% top rgb(20, 18, 24);
+  }
+}

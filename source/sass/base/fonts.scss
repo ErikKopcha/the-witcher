@@ -1,0 +1,11 @@
+// Подключение шрифтов
+@font-face {
+  font-family: "Mason Regular";
+  src:
+    url("../fonts/ofontruMason.woff2") format("woff2"),
+    url("../fonts/ofontruMason.woff") format("woff"),
+    url("../fonts/ofont.ru_Mason.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

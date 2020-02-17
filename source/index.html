@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="preload" href="fonts/ofontruMason.woff2" as="font" type="font/woff2">
   <link rel="stylesheet" href="css/style.min.css">
   <title>The Witcher</title>
 </head>
 
-<body>
+<body class="body">
 
   <!-- SVG-спрайты -->
   <div style="display:none;">
@@ -18,7 +19,7 @@
   </div>
 
   <!-- Для ридера -->
-  <h1 class="visually-hidden">Стартовый шаблон</h1>
+  <h1 class="visually-hidden">Промо-сайт сериала 'Ведьмак'</h1>
 
   <!-- Шапка -->
   <header class="header">
@@ -74,13 +75,63 @@
   <main class="main">
     <div class="main__inner">
       <div class="main__content">
-        <span class="main__ganre">2019, фэнтези</span>
+        <p class="main__ganre">2019, фэнтези</p>
         <div class="main__rating">
-          <div class="main__stars"></div>
-          <div class="main__numbers"></div>
+          <div class="main__stars">
+            <svg class="svg-icon" width="12" height="12" aria-label="рейтинг+">
+              <use xlink:href="#star-full"></use>
+            </svg>
+            <svg class="svg-icon" width="12" height="12" aria-label="рейтинг+">
+              <use xlink:href="#star-full"></use>
+            </svg>
+            <svg class="svg-icon" width="12" height="12" aria-label="рейтинг+">
+              <use xlink:href="#star-full"></use>
+            </svg>
+            <svg class="svg-icon" width="12" height="12" aria-label="рейтинг+">
+              <use xlink:href="#star-full"></use>
+            </svg>
+            <svg class="svg-icon" width="12" height="12" aria-label="рейтинг+">
+              <use xlink:href="#star-full"></use>
+            </svg>
+            <svg class="svg-icon" width="12" height="12" aria-label="рейтинг+">
+              <use xlink:href="#star-full"></use>
+            </svg>
+            <svg class="svg-icon" width="12" height="12" aria-label="рейтинг+">
+              <use xlink:href="#star-full"></use>
+            </svg>
+            <svg class="svg-icon" width="12" height="12" aria-label="рейтинг-">
+              <use xlink:href="#star-null"></use>
+            </svg>
+            <svg class="svg-icon" width="12" height="12" aria-label="рейтинг-">
+              <use xlink:href="#star-null"></use>
+            </svg>
+            <svg class="svg-icon" width="12" height="12" aria-label="рейтинг-">
+              <use xlink:href="#star-null"></use>
+            </svg>
+          </div>
+          <span class="main__numbers">7/10</span>
+        </div>
+        <div class="main__wrapper">
+          <div class="main__description">
+            <p class="main__title">Ведьмак</p>
+            <p class="main__text">
+              Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва путешествует по
+              Континенту.
+              За тугой мешочек чеканных монет этот мужчина избавит вас от всякой настырной нечисти — хоть от чудищ
+              болотных,
+              оборотней и даже заколдованных принцесс.
+            </p>
+            <a href="#" class="main__link-online">Смотреть онлайн</a>
+          </div>
+          <div class="main__play">
+            <button class="main__btn">
+              <svg class="svg-icon svg-icon--play" width="36" height="40" aria-label="плей">
+                <use xlink:href="#play"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-      <div class="main__button-play"></div>
     </div>
   </main>
 
