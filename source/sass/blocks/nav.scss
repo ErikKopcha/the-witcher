@@ -12,6 +12,13 @@
 }
 
 .nav__item {
+  transition: $transition;
+
+  &:hover {
+    color: $color-hover;
+    transform: scale(1.1);
+  }
+
   &:not(:last-child) {
     margin-right: 24px;
   }

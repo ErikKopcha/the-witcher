@@ -30,7 +30,7 @@
 }
 
 .main__title {
-  font-family: "Mason Regular";
+  font-family: "Mason Regular", sans-serif;
   font-size: 76px;
   margin: 55px 0 55px 0;
 }
@@ -50,7 +50,7 @@
   }
 
   &:active {
-    background-color: rgba($color: $color-hover, $alpha: 1.0);
+    background-color: rgba($color: $color-hover, $alpha: 1);
   }
 }
 
@@ -79,7 +79,6 @@
     border-radius: 100%;
     z-index: -1;
     transition: $transition;
-
   }
 
   &:hover::after {
