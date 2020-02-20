@@ -1,0 +1,66 @@
+.slider {
+  margin-bottom: 100px;
+}
+
+.slider__inner {
+  @include inner;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slider__series {
+  width: 162px;
+  height: 110px;
+  border-radius: 10px;
+  padding: 60px 0 13px 13px;
+  cursor: pointer;
+  transition: $transition;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.slider__series-one {
+  background: url("../img/card-image-one.jpg");
+  background-size: 100%;
+
+  @media (min-resolution: $retina_dpi), (min-resolution: $retina_dppx) {
+    background: url("../img/card-image-one2x.jpg") no-repeat center top rgb(20, 18, 24);
+    background-size: 100%;
+  }
+}
+
+.slider__series-two {
+  background: url("../img/card-image-two.jpg");
+  background-size: 100%;
+
+  @media (min-resolution: $retina_dpi), (min-resolution: $retina_dppx) {
+    background: url("../img/card-image-two2x.jpg") no-repeat center top rgb(20, 18, 24);
+    background-size: 100%;
+  }
+}
+
+.slider__title {
+  font-size: 10px;
+}
+
+.slider__click {
+  align-self: center;
+}
+
+.slider__button {
+  background-color: transparent;
+  border: none;
+  transition: $transition;
+  padding-top: 8px;
+
+  &:hover {
+    transform: translateX(10px);
+  }
+}

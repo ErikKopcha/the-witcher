@@ -57,18 +57,6 @@
       </div>
     </div>
 
-    <!-- Правильное подключение картинки -->
-    <!-- <picture>
-      <source type="image/webp" media="(min-width: 1150px)"
-        srcset="img/webp/firsova-desktop@1x.webp 1x, img/webp/firsova-desktop@2x.webp 2x">
-      <source type="image/webp" media="(min-width: 768px)"
-        srcset="img/webp/firsova-tablet@1x.webp 1x, img/webp/firsova-tablet@2x.webp 2x">
-      <source type="image/webp" srcset="img/webp/firsova-mobile.webp 1x, img/webp/firsova-mobile@2x.webp 2x">
-      <source media="(min-width: 1150px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
-      <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-      <img class="header__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Фирсова">
-    </picture> -->
-
   </header>
 
   <!-- Основной контент -->
@@ -133,6 +121,25 @@
         </div>
       </div>
     </div>
+    <div class="slider">
+      <div class="slider__inner">
+        <div class="slider__series slider__series-one">
+          <p class="slider__title">Серия #1</p>
+          <p class="slider__text">Начало конца</p>
+        </div>
+        <div class="slider__series slider__series-two">
+          <p class="slider__title">Серия #2</p>
+          <p class="slider__text">Четыре знака</p>
+        </div>
+        <div class="slider__click">
+          <button class="slider__button">
+            <svg class="svg-icon svg-icon--play" width="32" height="23" aria-label="следующий">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
     <div class="modal">
       <div class="modal__wrapper">
         <div class="modal__close">
@@ -148,7 +155,20 @@
 
   <!-- Подвал -->
   <footer class="footer">
-    <div class="footer__inner"></div>
+    <div class="footer__inner">
+      <p class="footer__text">&copy; 2020 The Witcher. All right reserved.</p>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Terms of Service</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Legal</a>
+        </li>
+      </ul>
+    </div>
   </footer>
 
   <!-- Скрипты -->

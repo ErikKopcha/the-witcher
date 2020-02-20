@@ -1,3 +1,35 @@
+.footer {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  background-color: #141218;
+  color: rgba($color: #ffffff, $alpha: 0.5);
+}
+
 .footer__inner {
   @include inner;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__list {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__item {
+  transition: $transition;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &:hover {
+    color: $color-hover;
+    transform: scale(1.1);
+  }
 }
