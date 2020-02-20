@@ -1,10 +1,12 @@
 .slider {
   margin-bottom: 100px;
+  max-width: 400px;
 }
 
 .slider__inner {
   @include inner;
 
+  position: relative;
   display: flex;
   flex-wrap: wrap;
 }
@@ -16,17 +18,10 @@
   padding: 60px 0 13px 13px;
   cursor: pointer;
   transition: $transition;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-
-  &:hover {
-    transform: scale(1.1);
-  }
+  margin-right: 30px;
 }
 
-.slider__series-one {
+.slider__series--one {
   background: url("../img/card-image-one.jpg");
   background-size: 100%;
 
@@ -36,7 +31,7 @@
   }
 }
 
-.slider__series-two {
+.slider__series--two {
   background: url("../img/card-image-two.jpg");
   background-size: 100%;
 
@@ -54,13 +49,72 @@
   align-self: center;
 }
 
-.slider__button {
-  background-color: transparent;
+/* Слайдер */
+// .slick-slider{}
+/* Слайдер запущен */
+// .slick-slider.slick-initialized{}
+/* Слайдер с точками */
+// .slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+/* Слайд */
+// .slick-slide {}
+/* Слайд активный (показывается) */
+// .slick-slide.slick-active{
+// }
+/* Слайд основной */
+.slick-slide.slick-current{
+  border-radius: 10px;
+}
+/* Слайд по центру */
+// .slick-slide.slick-center{
+// }
+/* Клонированный слайд */
+// .slick-slide.slick-cloned{
+// }
+/* Стрелка */
+.slick-arrow{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+  display: none!important;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: url('../img/sprite-svg/arrow.svg') no-repeat center right;
+  font-size: 0;
+  min-width: 40px;
   border: none;
   transition: $transition;
-  padding-top: 8px;
 
   &:hover {
-    transform: translateX(10px);
+
+    transform: translateY(-13px) scale(1.1);
+  }
+
+  &:active {
+    transform: translateY(-13px) scale(1);
   }
 }
+/* Стрелка не активная */
+// .slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+// .slick-dots{}
+// .slick-dots li{}
+/* Активная точка */
+// .slick-dots li.slick-active{}
+/* Элемент точки */
+// .slick-dots li button{}

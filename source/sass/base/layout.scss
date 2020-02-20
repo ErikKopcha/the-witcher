@@ -32,6 +32,10 @@ body {
 .body {
   background: url("../img/background.jpg") no-repeat right top rgb(20, 18, 24);
   background-size: 80%;
+
+  @media (max-width: 1150px) {
+    background-position: right center;
+  }
 }
 
 // Ретинизация bg image
@@ -39,6 +43,10 @@ body {
   .body {
     background: url("../img/background2x.jpg") no-repeat right top rgb(20, 18, 24);
     background-size: 80%;
+
+    @media (max-width: 1150px) {
+      background-position: right center;
+    }
   }
 }
 

@@ -1,10 +1,10 @@
 'use scrict';
 
 var playButton = document.querySelector('.main__btn'),
-      playOnline = document.querySelector('.main__link-online'),
-      playTrailer = document.querySelector('.nav__link--trailer'),
-      modalBlock = document.querySelector('.modal'),
-      closeModal = document.querySelector('.modal__close');
+  playOnline = document.querySelector('.main__link-online'),
+  playTrailer = document.querySelector('.nav__link--trailer'),
+  modalBlock = document.querySelector('.modal'),
+  closeModal = document.querySelector('.modal__close');
 
 function showElem(elem) {
   elem.style.display = 'block';
