@@ -3,12 +3,74 @@
   align-items: center;
   margin-right: auto;
   margin-left: 68px;
+
+  @media (max-width: 900px) {
+    margin-right: 0;
+  }
+}
+
+.nav__button {
+  display: none;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  transition: $transition;
+
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.nav__button-active > .nav__line-btn--first {
+  transform: rotate(-45deg) translate(-6px, 4px);
+}
+
+.nav__button-active > .nav__line-btn--last {
+  transform: rotate(45deg) translate(-4px, -2px);
+}
+
+.nav__button-active > .nav__line-btn--dn {
+  display: none;
+}
+
+.nav__line-btn {
+  width: 40px;
+  height: 2px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 900px) {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: red;
+  }
 }
 
 .nav__list {
   @include reset-list;
 
   display: flex;
+  cursor: pointer;
+  transition: $transition;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 35px;
+    background-color: rgba($color: #9d2929, $alpha: 0.9);
+  }
+}
+
+.nav__list-db {
+  display: block;
 }
 
 .nav__item {
@@ -21,10 +83,14 @@
 
   &:not(:last-child) {
     margin-right: 24px;
-  }
-}
 
-.nav__line-btn {
-  width: 40px;
-  height: 2px;
+    @media (max-width: 900px) {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 900px) {
+    line-height: 70px;
+    padding: 0 150px;
+  }
 }

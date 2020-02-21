@@ -4,6 +4,10 @@
 
 .main__content {
   margin-bottom: 85px;
+
+  @media (max-width: 900px) {
+    margin-bottom: 55px;
+  }
 }
 
 .main__ganre {
@@ -41,6 +45,10 @@
 
 .main__text {
   margin-bottom: 80px;
+
+  @media (max-width: 900px) {
+    margin-bottom: 50px;
+  }
 }
 
 .main__link-online {
@@ -63,6 +71,10 @@
   align-self: center;
   transition: all 0.4s ease;
   margin-right: 200px;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
 }
 
 .main__btn {
