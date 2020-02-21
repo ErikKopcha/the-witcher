@@ -41,6 +41,10 @@
   font-family: "Mason Regular", sans-serif;
   font-size: 76px;
   margin: 55px 0 55px 0;
+
+  @media (max-width: 350px) {
+    font-size: 66px;
+  }
 }
 
 .main__text {
@@ -64,6 +68,10 @@
 
   &:active {
     background-color: rgba($color: $color-hover, $alpha: 1);
+  }
+
+  @media (max-width: 320px) {
+    padding: 22px 70px;
   }
 }
 
