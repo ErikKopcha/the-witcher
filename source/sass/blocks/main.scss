@@ -57,7 +57,8 @@
 
 .main__link-online {
   display: inline-block;
-  padding: 22px 72px;
+  padding: 0 70px;
+  line-height: 60px;
   background-color: $color-hover;
   border-radius: 6px;
   transition: $transition;
@@ -68,10 +69,6 @@
 
   &:active {
     background-color: rgba($color: $color-hover, $alpha: 1);
-  }
-
-  @media (max-width: 320px) {
-    padding: 22px 70px;
   }
 }
 

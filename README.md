@@ -4,4 +4,4 @@
 
 **Technology stack:** HTML5 / CSS3 / JavaScript / jQuery / Responsive Web Design
 
-**GitHub Pages:** [Link - soon](#)
+**GitHub Pages:** [Link](https://erikkopcha.github.io/the-witcher/)

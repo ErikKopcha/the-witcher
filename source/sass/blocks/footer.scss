@@ -19,6 +19,16 @@
 
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: 580px) {
+    display: none;
+  }
+}
+
+.footer__text {
+  @media (max-width: 580px) {
+    margin: 0 auto;
+  }
 }
 
 .footer__item {

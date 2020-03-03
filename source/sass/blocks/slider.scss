@@ -14,6 +14,10 @@
     width: 100%;
     flex-direction: column;
   }
+
+  @media (max-width: 415px) {
+    margin-bottom: 50px;
+  }
 }
 
 .slider__series {
